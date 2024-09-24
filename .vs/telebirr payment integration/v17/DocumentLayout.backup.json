@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\HP\\Desktop\\Workshop\\DOTNET workshop\\telebirr payment integration\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{89125FF3-4F9E-49AD-9909-068FF2ABBBFC}|telebirr payment integration.csproj|c:\\users\\hp\\desktop\\workshop\\dotnet workshop\\telebirr payment integration\\services\\createorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89125FF3-4F9E-49AD-9909-068FF2ABBBFC}|telebirr payment integration.csproj|solutionrelative:services\\createorderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89125FF3-4F9E-49AD-9909-068FF2ABBBFC}|telebirr payment integration.csproj|c:\\users\\hp\\desktop\\workshop\\dotnet workshop\\telebirr payment integration\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89125FF3-4F9E-49AD-9909-068FF2ABBBFC}|telebirr payment integration.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89125FF3-4F9E-49AD-9909-068FF2ABBBFC}|telebirr payment integration.csproj|c:\\users\\hp\\desktop\\workshop\\dotnet workshop\\telebirr payment integration\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{89125FF3-4F9E-49AD-9909-068FF2ABBBFC}|telebirr payment integration.csproj|solutionrelative:views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89125FF3-4F9E-49AD-9909-068FF2ABBBFC}|telebirr payment integration.csproj|c:\\users\\hp\\desktop\\workshop\\dotnet workshop\\telebirr payment integration\\services\\applyfabrictokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89125FF3-4F9E-49AD-9909-068FF2ABBBFC}|telebirr payment integration.csproj|solutionrelative:services\\applyfabrictokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89125FF3-4F9E-49AD-9909-068FF2ABBBFC}|telebirr payment integration.csproj|c:\\users\\hp\\desktop\\workshop\\dotnet workshop\\telebirr payment integration\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{89125FF3-4F9E-49AD-9909-068FF2ABBBFC}|telebirr payment integration.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CreateOrderService.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Workshop\\DOTNET workshop\\telebirr payment integration\\Services\\CreateOrderService.cs",
+              "RelativeDocumentMoniker": "Services\\CreateOrderService.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Workshop\\DOTNET workshop\\telebirr payment integration\\Services\\CreateOrderService.cs",
+              "RelativeToolTip": "Services\\CreateOrderService.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAwCQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T09:03:05.992Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Workshop\\DOTNET workshop\\telebirr payment integration\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Workshop\\DOTNET workshop\\telebirr payment integration\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T09:01:14.975Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Workshop\\DOTNET workshop\\telebirr payment integration\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Workshop\\DOTNET workshop\\telebirr payment integration\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-23T08:52:48.956Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Workshop\\DOTNET workshop\\telebirr payment integration\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Workshop\\DOTNET workshop\\telebirr payment integration\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T22:32:40.856Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ApplyFabricTokenService.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\Workshop\\DOTNET workshop\\telebirr payment integration\\Services\\ApplyFabricTokenService.cs",
+              "RelativeDocumentMoniker": "Services\\ApplyFabricTokenService.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\Workshop\\DOTNET workshop\\telebirr payment integration\\Services\\ApplyFabricTokenService.cs",
+              "RelativeToolTip": "Services\\ApplyFabricTokenService.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAACFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T22:09:40.81Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

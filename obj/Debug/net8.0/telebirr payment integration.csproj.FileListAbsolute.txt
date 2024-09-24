@@ -1,0 +1,33 @@
+C:\Users\HP\Desktop\Workshop\DOTNET workshop\telebirr payment integration\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\HP\Desktop\Workshop\DOTNET workshop\telebirr payment integration\bin\Debug\net8.0\appsettings.json
+C:\Users\HP\Desktop\Workshop\DOTNET workshop\telebirr payment integration\bin\Debug\net8.0\telebirr payment integration.staticwebassets.runtime.json
+C:\Users\HP\Desktop\Workshop\DOTNET workshop\telebirr payment integration\bin\Debug\net8.0\telebirr payment integration.exe
+C:\Users\HP\Desktop\Workshop\DOTNET workshop\telebirr payment integration\bin\Debug\net8.0\telebirr payment integration.deps.json
+C:\Users\HP\Desktop\Workshop\DOTNET workshop\telebirr payment integration\bin\Debug\net8.0\telebirr payment integration.runtimeconfig.json
+C:\Users\HP\Desktop\Workshop\DOTNET workshop\telebirr payment integration\bin\Debug\net8.0\telebirr payment integration.dll
+C:\Users\HP\Desktop\Workshop\DOTNET workshop\telebirr payment integration\bin\Debug\net8.0\telebirr payment integration.pdb
+C:\Users\HP\Desktop\Workshop\DOTNET workshop\telebirr payment integration\obj\Debug\net8.0\telebirr payment integration.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\Desktop\Workshop\DOTNET workshop\telebirr payment integration\obj\Debug\net8.0\telebirr payment integration.AssemblyInfoInputs.cache
+C:\Users\HP\Desktop\Workshop\DOTNET workshop\telebirr payment integration\obj\Debug\net8.0\telebirr payment integration.AssemblyInfo.cs
+C:\Users\HP\Desktop\Workshop\DOTNET workshop\telebirr payment integration\obj\Debug\net8.0\telebirr payment integration.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\Workshop\DOTNET workshop\telebirr payment integration\obj\Debug\net8.0\telebirr payment integration.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\HP\Desktop\Workshop\DOTNET workshop\telebirr payment integration\obj\Debug\net8.0\telebirr payment integration.RazorAssemblyInfo.cache
+C:\Users\HP\Desktop\Workshop\DOTNET workshop\telebirr payment integration\obj\Debug\net8.0\telebirr payment integration.RazorAssemblyInfo.cs
+C:\Users\HP\Desktop\Workshop\DOTNET workshop\telebirr payment integration\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\HP\Desktop\Workshop\DOTNET workshop\telebirr payment integration\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\HP\Desktop\Workshop\DOTNET workshop\telebirr payment integration\obj\Debug\net8.0\staticwebassets\msbuild.telebirr payment integration.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\HP\Desktop\Workshop\DOTNET workshop\telebirr payment integration\obj\Debug\net8.0\staticwebassets\msbuild.build.telebirr payment integration.props
+C:\Users\HP\Desktop\Workshop\DOTNET workshop\telebirr payment integration\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.telebirr payment integration.props
+C:\Users\HP\Desktop\Workshop\DOTNET workshop\telebirr payment integration\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.telebirr payment integration.props
+C:\Users\HP\Desktop\Workshop\DOTNET workshop\telebirr payment integration\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\HP\Desktop\Workshop\DOTNET workshop\telebirr payment integration\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\HP\Desktop\Workshop\DOTNET workshop\telebirr payment integration\obj\Debug\net8.0\scopedcss\bundle\telebirr payment integration.styles.css
+C:\Users\HP\Desktop\Workshop\DOTNET workshop\telebirr payment integration\obj\Debug\net8.0\scopedcss\projectbundle\telebirr payment integration.bundle.scp.css
+C:\Users\HP\Desktop\Workshop\DOTNET workshop\telebirr payment integration\obj\Debug\net8.0\telebirr payment integration.dll
+C:\Users\HP\Desktop\Workshop\DOTNET workshop\telebirr payment integration\obj\Debug\net8.0\refint\telebirr payment integration.dll
+C:\Users\HP\Desktop\Workshop\DOTNET workshop\telebirr payment integration\obj\Debug\net8.0\telebirr payment integration.pdb
+C:\Users\HP\Desktop\Workshop\DOTNET workshop\telebirr payment integration\obj\Debug\net8.0\telebirr payment integration.genruntimeconfig.cache
+C:\Users\HP\Desktop\Workshop\DOTNET workshop\telebirr payment integration\obj\Debug\net8.0\ref\telebirr payment integration.dll
+C:\Users\HP\Desktop\Workshop\DOTNET workshop\telebirr payment integration\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\HP\Desktop\Workshop\DOTNET workshop\telebirr payment integration\obj\Debug\net8.0\telebirr payment integration.csproj.AssemblyReference.cache
+C:\Users\HP\Desktop\Workshop\DOTNET workshop\telebirr payment integration\obj\Debug\net8.0\telebirr.AF734ECD.Up2Date
