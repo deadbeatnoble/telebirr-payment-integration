@@ -1,16 +1,17 @@
 ﻿using Microsoft.Extensions.Options;
+using Microsoft.VisualBasic;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using System.Net.Http.Headers;
-using System.Runtime.InteropServices.JavaScript;
 using System.Security.Cryptography;
 using System.Text;
+using telebirr_payment_integration.Controllers;
 using telebirr_payment_integration.Models;
 
 namespace telebirr_payment_integration.Services
 {
     public class CreateOrderService
     {
+
         private readonly PaymentCredentialsModel paymentCredentials;
         private readonly ApplyFabricTokenService applyFabricToken;
 
@@ -27,6 +28,92 @@ namespace telebirr_payment_integration.Services
         }
 
         public async Task<string> CreateOrder(string title = "foodisgood", string amount = "512")
+        {
+            var fabricTokenResponse = await applyFabricToken.ApplyFabricToken();
+            var json = JObject.Parse(fabricTokenResponse);
+            var token = json["token"].ToString();
+            var createOrderResult = await RequestCreateOrder(token, title, amount);
+
+            /*string prepayId = createOrderResult.BizContent.PrepayId;
+            string rawRequest = CreateRawRequest(prepayId);
+            Console.WriteLine("Assembled URL");
+
+            string assembledUrl = $"{_config.WebBaseUrl}{rawRequest}&version=1.0&trade_type=Checkout";
+            Console.WriteLine(assembledUrl);*/
+
+            return createOrderResult;
+        }
+
+        private async Task<string> RequestCreateOrder(string fabricToken, string title, string amount)
+        {
+            HttpClientHandler httpClientHandler = new HttpClientHandler();
+            httpClientHandler.ServerCertificateCustomValidationCallback = (sender, cert, chain, sslPolicyErrors) => { return true; };
+            HttpClient client = new HttpClient(httpClientHandler);
+
+            var reqObject = CreateRequestObject(title, amount);
+            //string json = JsonConvert.SerializeObject(reqObject);
+
+            var requestMessage = new HttpRequestMessage(HttpMethod.Post, $"{paymentCredentials.BaseUrl}/payment/v1/merchant/preOrder")
+            {
+                Content = new StringContent(reqObject, Encoding.UTF8, "application/json")
+            };
+
+            requestMessage.Headers.Add("X-APP-Key", paymentCredentials.FabricAppId);
+            requestMessage.Headers.Add("Authorization", fabricToken);
+
+            HttpResponseMessage response = await client.SendAsync(requestMessage);
+            string responseBody = await response.Content.ReadAsStringAsync();
+
+            if (!response.IsSuccessStatusCode)
+            {
+                throw new Exception($"Error: {responseBody}");
+            }
+
+            return responseBody;
+        }
+
+        private string CreateRequestObject(string title, string amount)
+        {
+            var bizContent = new Dictionary<string, object>
+            {
+                ["notify_url"] = "https://www.google.com",
+                ["appid"] = paymentCredentials.MerchantAppId,
+                ["merch_code"] = paymentCredentials.ShortCode,
+                ["merch_order_id"] = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds().ToString(),
+                ["trade_type"] = "Checkout",
+                ["title"] = title,
+                ["total_amount"] = amount,
+                ["trans_currency"] = "ETB",
+                ["timeout_express"] = "120m",
+                ["business_type"] = "BuyGoods",
+                ["redirect_url"] = "https://www.bing.com/",
+                ["callback_info"] = "From web",
+                ["payee_identifier_type"] = "04",
+                ["payee_identifier"] = paymentCredentials.ShortCode,
+                ["payee_type"] = "5000",
+            };
+
+            var req = new Dictionary<string, object>
+            {
+                ["timestamp"] = createTimeStamp(),
+                ["nonce_str"] = createNonceStr(),
+                ["method"] = "payment.preorder",
+                ["version"] = "1.0",
+                ["biz_content"] = bizContent,  
+            };
+
+            req.Add("sign", sign(req));
+            req.Add("sign_type", "SHA256WithRSA");
+
+            return JsonConvert.SerializeObject(req);
+        }
+
+
+
+
+
+
+        /*public async Task<string> CreateOrder(string title = "foodisgood", string amount = "512")
         {
             
             HttpClientHandler httpClientHandler = new HttpClientHandler();
@@ -108,8 +195,7 @@ namespace telebirr_payment_integration.Services
             string sorted = string.Join("&", raw);
 
             return sorted;
-        }
-
+        }*/
 
 
 
@@ -136,12 +222,14 @@ namespace telebirr_payment_integration.Services
             }
             return str;
         }
+        
         public string sign(Dictionary<string, object> request)
         {
             string private_key = my_private_key;
             string[] exclude_fields = { "sign", "sign_type", "header", "refund_info", "openType", "raw_request" };
             string[] requestJoin = { };
             Dictionary<string, object>.KeyCollection keys = request.Keys;
+
             foreach (string key in keys)
             {
                 if (key.Contains(exclude_fields[0]) || key.Contains(exclude_fields[1]) || key.Contains(exclude_fields[2]) || key.Contains(exclude_fields[3]) || key.Contains(exclude_fields[4]) || key.Contains(exclude_fields[5]))
@@ -150,8 +238,8 @@ namespace telebirr_payment_integration.Services
                 }
                 if (key == "biz_content")
                 {
-                    Dictionary<string, string> biz_content = (Dictionary<string, string>)request["biz_content"];
-                    Dictionary<string, string>.KeyCollection biz_keys = biz_content.Keys;
+                    Dictionary<string, object> biz_content = (Dictionary<string, object>)request["biz_content"];
+                    Dictionary<string, object>.KeyCollection biz_keys = biz_content.Keys;
 
                     foreach (string k in biz_keys)
                     {
@@ -164,28 +252,30 @@ namespace telebirr_payment_integration.Services
                 }
             }
             Array.Sort(requestJoin);
+            //Console.Write(requestJoin.ToString());
+
             int index = 0;
             string[] temp = requestJoin.ToArray();
             foreach (string key in temp)
             {
-                Console.WriteLine(key + " index " + index);
+                //Console.WriteLine(key + " index " + index);
                 index++;
             }
-            if (temp[7] != null && temp[8] != null && temp[7].Contains("payee_identifier_type") && temp[8].Contains("payee_identifier"))
+            if (temp[8] != null && temp[9] != null && temp[8].Contains("payee_identifier_type") && temp[9].Contains("payee_identifier"))
             {
-                temp[7] = requestJoin[8];
-                temp[8] = requestJoin[7];
+                temp[8] = requestJoin[9];
+                temp[9] = requestJoin[8];
             }
             else
             {
                 return "payee_identifier _type and payee_identifier error check the position and do the swap accordingly!";
             }
+
             string sorted = string.Join("&", temp);
             string signed = SignTool(sorted, private_key);
             return signed;
-
-
         }
+
         public string SignTool(string data, string privateKey)
         {
             using (var rsa = RSA.Create())

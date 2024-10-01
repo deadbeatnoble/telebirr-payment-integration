@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("telebirr payment integration")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ddcd1ef28709571d231a4e73613fdb9f2d730573")]
 [assembly: System.Reflection.AssemblyProductAttribute("telebirr payment integration")]
 [assembly: System.Reflection.AssemblyTitleAttribute("telebirr payment integration")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

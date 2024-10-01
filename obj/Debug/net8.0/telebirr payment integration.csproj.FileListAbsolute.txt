@@ -31,3 +31,4 @@ C:\Users\HP\Desktop\Workshop\DOTNET workshop\telebirr payment integration\obj\De
 C:\Users\HP\Desktop\Workshop\DOTNET workshop\telebirr payment integration\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\Users\HP\Desktop\Workshop\DOTNET workshop\telebirr payment integration\obj\Debug\net8.0\telebirr payment integration.csproj.AssemblyReference.cache
 C:\Users\HP\Desktop\Workshop\DOTNET workshop\telebirr payment integration\obj\Debug\net8.0\telebirr.AF734ECD.Up2Date
+C:\Users\HP\Desktop\Workshop\DOTNET workshop\telebirr payment integration\obj\Debug\net8.0\telebirr payment integration.sourcelink.json
